@@ -12,12 +12,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Casella Numero</title>
+    <style>
+        #risposta {
+            font-size: 200px; /* Grandezza del testo */
+            color: red;       /* Colore rosso */
+            font-weight: bold;
+            text-transform: uppercase; /* Trasforma il testo in maiuscolo */
+        }
+    </style>
     <script>
         function mostraRisposta() {
             var numero = document.getElementById("numeroInput").value;
             var risposta = document.getElementById("risposta");
             if (numero !== "") {
-                risposta.innerHTML = <big> "BALISTRI"</big>;
+                risposta.innerHTML = "BALISTRI";
             } else {
                 risposta.innerHTML = "";
             }
