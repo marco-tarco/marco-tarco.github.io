@@ -1,11 +1,3 @@
-
-
-
-<img src="coser.png" width=1900px height=1000px>
-
-<p id = "coser">COSER SPOGLIATIIIIIIIIIIIIIIIIIIIIIIIIII</p>
-
-
 <!DOCTYPE html>
 <html lang="it">
 <head>
@@ -20,7 +12,13 @@
             text-transform: uppercase; /* Trasforma il testo in maiuscolo */
         }
         #coser {
-            font-size: 200px;
+            font-size: 40px;
+            font-weight: bold;
+            color: blue; /* Puoi scegliere un altro colore */
+        }
+        img {
+            width: 100%; /* Per adattare l'immagine alla larghezza della finestra */
+            height: auto; /* Mantiene le proporzioni dell'immagine */
         }
     </style>
     <script>
@@ -36,12 +34,15 @@
     </script>
 </head>
 <body>
+    <!-- Aggiungi l'immagine -->
+    <img src="coser.png" alt="Immagine coser">
+    
+    <!-- Paragrafo con l'ID coser -->
+    <p id="coser">COSER SPOGLIATIIIIIIIIIIIIIIIIIIIIIIIIII</p>
+
     <h1>Inserisci un numero</h1>
     <label for="numeroInput">Numero:</label>
     <input type="text" id="numeroInput" placeholder="Scrivi un numero" oninput="mostraRisposta()">
     <p id="risposta"></p>
 </body>
-
 </html>
-
-
