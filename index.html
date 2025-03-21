@@ -1,1 +1,28 @@
 COSER SPOGLIATIIIIIIIIIIIIIIIIIIIIIIIIII
+
+
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Casella Numero</title>
+    <script>
+        function mostraRisposta() {
+            var numero = document.getElementById("numeroInput").value;
+            var risposta = document.getElementById("risposta");
+            if (numero !== "") {
+                risposta.innerHTML = "BALISTRI";
+            } else {
+                risposta.innerHTML = "";
+            }
+        }
+    </script>
+</head>
+<body>
+    <h1>Inserisci un numero</h1>
+    <label for="numeroInput">Numero:</label>
+    <input type="text" id="numeroInput" placeholder="Scrivi un numero" oninput="mostraRisposta()">
+    <p id="risposta"></p>
+</body>
+</html>
